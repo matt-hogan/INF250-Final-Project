@@ -228,7 +228,7 @@ tbody tr:nth-child(even) {
 }
 
 .pageLink {
-    width: 90%;
+    width: 100%;
     padding: 5px;
     margin: 5px;
     text-align: center;
