@@ -224,7 +224,9 @@ tbody tr:nth-child(even) {
 
 .homeIMG {
     width: 100%;
+    height: 100%;
     margin: 0;
+    object-fit: cover;
 }
 
 .pageLink {
@@ -340,7 +342,7 @@ textarea {
     }
 
     #sports, #contact {
-        width: 101%;
+        width: 101.5%;
     }
 
     .pageLink {
