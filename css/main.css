@@ -207,6 +207,8 @@ tbody tr:nth-child(even) {
         "weather"
         "contact";
     grid-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 #news { grid-area: news; }
