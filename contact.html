@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INF250 News</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <section>
+            <a href="index.html"><img src="img/logo.png" alt="News Logo"></a>
+            <h1><a href="index.html">INF250 News</a></h1>
+        </section>
+    </header>
+    <main>
+        <nav>
+            <a class="links" href="index.html">Home</a>
+            <a class="links" href="news.html">News</a>
+            <a class="links" href="sports.html">Sports</a>
+            <a class="links" href="weather.html">Weather</a>
+            <a class="links" href="contact.html">Contact</a>
+        </nav>
+        <section id="parentSection">
+            <h2>Contact Us</h2>
+            <form action="https://rest-api-ex.herokuapp.com/all" method="POST" id="contact_form">
+                <label for="name">Name<span class="redText">*</span></label>
+                <input type="text" name="name" id="name" autofocus required placeholder="First and Last Name">
+                <label for="email">E-Mail<span class="redText">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="example@email.com">
+                <label for="message">Message<span class="redText">*</span></label>
+                <textarea name="message" id="message" rows="6" required placeholder="Write a message"></textarea>
+                <div class="buttons">
+                    <div>
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                    <div>
+                        <input type="reset" id="reset" value="Reset">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>&copy; 2020 | Matthew Hogan</p>
+        </section>
+    </footer>
+</body>
+</html>

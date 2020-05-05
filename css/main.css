@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif, Arial;
+    font-size: 16px;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0,135,99);
+    background: linear-gradient(180deg, rgba(0,135,99,1) -40%, rgba(255,255,255,1) 160%);
+    background-attachment: fixed;
+}
+
+header, main, nav, section, article, footer {
+    margin: 5px;
+}
+
+header, main, footer {
+    width: calc(100% - 10px);
+    background-color: #f2f3f4;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.75rem;
+    text-align: right;
+    margin-bottom: 0;
+    border-bottom: 1px solid #c0c0c0;
+    text-shadow: 2px 2px 2px #008763;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-right: 20px;
+}
+
+header section img {
+    width: 100px;
+}
+
+h1 a:link, h1 a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: calc(100%);
+}
+
+section img {
+    width: calc(100% - 20px);
+    margin: 2px;
+}
+
+.links {
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 70%;
+    padding: 2px;
+    margin: 3px;
+    background-color: #008763;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+nav > a:link, nav > a:visited {
+    color: white;
+}
+
+#parentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    width: 80%;
+}
+
+.articleIMG {
+    width: 100%;
+    max-width: 720px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+article p {
+    font-size: 1.05rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.linkURL {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    border-top: 1px solid #c0c0c0;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    font-size: .8rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+
+/* Weather */
+figure {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+th {
+    background-color: #008763;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.day {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eef7f5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #b2dbd0;
+}
+
+/* Home */
+#home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "news"
+        "sports"
+        "weather"
+        "contact";
+    grid-gap: 20px;
+}
+
+#news { grid-area: news; }
+#sports { grid-area: sports; }
+#weather { grid-area: weather; }
+#contact { grid-area: contact; }
+
+.pages {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeIMG {
+    width: 100%;
+    margin: 0;
+}
+
+.pageLink {
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+div a:link, div a:visited {
+    color: black;
+}
+
+/* Form */
+form {
+    width: 90%;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.redText{
+    color: red;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 3px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#submit, #reset {
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#submit {
+    background-color: #008763;
+}
+
+#reset {
+    background-color: #B22222;
+}
+
+
+@media screen and (min-width: 768px){
+    
+    header {
+        border-bottom: none;
+        font-size: 2rem;
+    }
+
+    header section {
+        border-bottom: 1px solid #c0c0c0;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    nav {
+        padding-top: 10px;
+        flex-direction: row;
+        width: calc(90%);
+    }
+
+    footer {
+        border-top: none;
+    }
+
+    footer section {
+        border-top: 1px solid #c0c0c0;
+        padding-top: 5px;
+    }
+    
+    .links {
+        width: 80%;
+        font-size: 1.25rem;
+    }
+
+    #parentSection {
+        width: calc(80% - 10px);
+    }
+
+    #home {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "news sports"
+            "weather contact";
+    }
+
+    #sports, #contact {
+        width: 101%;
+    }
+
+    .pageLink {
+        font-size: 1.6rem;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    #submit, #reset {
+        font-size: 1.25rem;
+    }
+
+    #paragraphs {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    form {
+        width: 70%;
+    }
+
+    #paragraphs {
+        width: 80%;
+    }
+
+    .links {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 1025px){
+    body {
+        margin-left: calc((100vw - 1024px)/2);
+    }
+
+    header, main, footer {
+        box-shadow: 6px 6px 6px #696969;
+    }
+}
